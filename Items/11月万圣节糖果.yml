@@ -1,0 +1,222 @@
+Halloween_sugar_white_dye:
+  Id: white_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_orange_dye:
+  Id: orange_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=absorption;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_magenta_dye:
+  Id: magenta_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=regeneration;duration=200;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_light_blue_dye:
+  Id: light_blue_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=speed;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_yellow_dye:
+  Id: yellow_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=glowing;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_lime_dye:
+  Id: lime_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=jump_boost;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_pink_dye:
+  Id: pink_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=regeneration;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_gray:
+  Id: gray_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=weekness;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_light_gray:
+  Id: light_gray_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=water_breathing;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_cyan:
+  Id: cyan_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=invisibility;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_purple:
+  Id: purple_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=slow;duration=600;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_blue:
+  Id: blue_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=night_vision;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_brown:
+  Id: brown_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=resistance;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_green:
+  Id: green_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=luck;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_red:
+  Id: red_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=strength;duration=6000;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing
+
+Halloween_sugar_black:
+  Id: black_dye
+  Display: '&a&l万&b&l圣&c&l节&d&l彩&e&l虹&6&l糖&2&l果'
+  Lore:
+  - '&e-------------------------------'
+  - '&d&l特质的彩虹糖！听说有16种！'
+  - '&e-------------------------------'
+  - '&a左键即可食用，回复10点饱食度'
+  - '&a不同的糖果可能会带来不同的效果！'
+  - '&e-------------------------------'
+  Skills:
+  - potion{type=wither;duration=200;level=1} @self ~onSwing
+  - skill{s=万圣节糖果回血} @self ~onSwing

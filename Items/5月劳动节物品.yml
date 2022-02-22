@@ -1,0 +1,32 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+wygz:
+  Id: iron_pickaxe
+  Display: '&a&l神奇的稿子'
+  Data: 200
+  Lore:
+  - '&e-------------------------------'
+  - '&6五一劳动节快乐！'
+  - '&a劳动最光荣！'
+  - '&e-------------------------------'
+  - '&2老矿工用了很久的镐子，耐久不多了'
+  - '&2到必要的时候再用吧！'
+  - '&e-------------------------------'
+  - '&5                 --2021年5月1日'
+  Enchantments:
+  - LOOT_BONUS_BLOCKS:5
+
+wyfz:
+  Id: diamond_axe
+  Display: '&c&l神奇的斧子'
+  Lore:
+  - '&e-------------------------------'
+  - '&6五一劳动节快乐！'
+  - '&a劳动最光荣！'
+  - '&e-------------------------------'
+  - '&b一把效率很高的斧子，可惜就是不耐用'
+  - '&e-------------------------------'
+  - '&5                 --2021年5月1日'
+  Enchantments:
+  - DIG_SPEED:7

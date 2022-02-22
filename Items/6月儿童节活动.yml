@@ -1,0 +1,17 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+lydg:
+  Id: potion
+  Display: '&e&l幸运&6&l药&5&l水'
+  PotionEffects:
+  - LUCK 360000 10
+  Lore:
+  - '&e-------------------------------'
+  - '&6六一儿童节快乐！'
+  - '&a童心不变！我们不老！'
+  - '&e-------------------------------'
+  - '&2六一儿童节纪念赠礼'
+  - '&c很好吃的哦！'
+  - '&e-------------------------------'
+  - '&5                 --2021年6月1日'
