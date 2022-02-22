@@ -1,0 +1,97 @@
+cjb:
+ Id: diamond_sword
+ Display: '&a&l冲击波！'
+ Lore:
+  - '&6清怪专用'
+ Skills:
+  - effect:particles{p=flame;amount=20;speed=0.5} @self ~onTimer:4
+
+SpecialSword:
+  Id: STICK
+  Display: '&6&l一根神奇的木棍'
+  Attributes:
+   MainHand:
+    Damage: 2
+  Skills:
+#   - skill{s=光芒炸裂} @TargetLocation ~onSwing
+   - skill{s=多重火球_技能} @Target ~onSwing
+
+AdminGreatsword:
+  Id: GOLD_SWORD
+  Display: '&6Greatsword of the Admin'
+  Attributes:
+    MainHand:
+      MovementSpeed: 0.10-0.15
+  Lore:
+  - '&4&oDoes no damage but makes people cry'
+  Options:
+    Unbreakable: true
+    Repairable: true
+  Enchantments:
+  - KNOCKBACK:20
+  Skills:
+  - cancelevent{sync=true} ~onAttack
+  - effect:particles{p=tears;a=99;speed=20} @PlayersInRadius{r=30} ~onUse
+  - skill:BanHammer @trigger ~onAttack
+
+SpecialSword2:
+  Id: STICK
+  Display: '&6&l另一根神奇的木棍'
+  Attributes:
+   MainHand:
+    Damage: 1
+  Skills:
+  - skill{s=爆裂冲击波_技能} @Target ~onSwing
+
+zc1:
+  Id: bowl
+  Display: '&2一个能自动产生史莱姆球的碗'
+  Skills:
+   - skill{s=自产史莱姆球} @self ~onTimer:40
+  Conditions:
+  - equipslot MAIN
+
+paosa:
+  Id: STICK
+  Display: '&f&l炫富机器'
+  Skills:
+   - skill{s=抛洒} @self ~onSwing
+
+texiao:
+  Id: wooden_sword
+  Display: '&6&l粒子特效'
+  Skills:
+  - skill{s=鲲鲲} @self ~onSwing
+  - skill{s=绿色特效} @self ~onSwing
+
+tuteng:
+  Id: STICK
+  Display: '&f&l图腾召唤'
+  Skills:
+   - skill{s=图腾特效_2021} @self ~onSwing
+
+  
+烟花:
+  Id: sunflower
+  Display: '&d&l庆典礼花炮'
+拉屎鞘翅_plus:
+  Id: elytra
+  Display: '&f&l新&e&l年&c&l鞘&4&l翅-&c&lp&e&ll&f&lu&c&ls'
+  Lore:
+  - '&5-------------------------------'
+  - '&6金虎贺岁礼'
+  - '&5-------------------------------'
+  - '&d&n拥有摔落保护四附魔'
+  - '&5-------------------------------'
+  - '&2活动道具'
+  - '&4获取方式：&c&l2022春节活动中获取'
+  - '&5-------------------------------'
+  - '&d特殊功能：&a拥有&2&l绿色微光粒子&a特效'
+  - '&5-------------------------------'
+  - '&2你的飞行安全，我来守护~'
+  - '&5-------------------------------'
+  Enchantments:
+   - PROTECTION_FALL:4
+  Skills:
+   - skill{s=拉屎特效} @self ~onTimer:40
+

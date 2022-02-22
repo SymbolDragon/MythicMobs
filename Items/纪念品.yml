@@ -1,0 +1,23 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+lw1:
+  Id: SUNFLOWER
+  Display: '&a&l仙剑世界开服纪念币'
+  Lore:
+  - '&6欢迎各位来到仙建世界，这是给你们的礼物'
+  - '&5    --2021年4月12日'
+lw2:
+  Id: PUMPKIN_PIE
+  Display: '&e&l派蒙'
+  Lore:
+  - '&b欢迎各位来到仙建世界，这是给你们的应急食品'
+
+OP:
+ Id: diamond_sword
+ Display: '&a&l秒杀之剑'
+ Attributes:
+  MainHand:
+   Damage: 1000
+ Lore:
+  - '&6OP清怪专用'
