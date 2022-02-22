@@ -1,0 +1,16 @@
+﻿YH:
+  Type: Evoker
+  Display: "&6特效测试员"
+  Health: 100
+  Damage: 1
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  Options:
+   MovementSpeed: 0.01
+   KnockbackResistance: 1
+   PreventMobKillDrops: true
+   PreventOtherDrops: true
+  Skills:
+  - skill{s=火焰雨_特效}@target ~OnDamage
+  - skill{s=死亡特效_test} @NearestPlayer{r=25} ~onDeath

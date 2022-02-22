@@ -1,0 +1,36 @@
+﻿FCYH:
+  MobType: Husk
+  Display: '&4&l复仇焰魂'
+  Health: 60
+  Damage: 5
+  Drops:
+  - exp 51-54
+  AITargetSelectors:
+  - 0 clear
+  Options:
+    AlwaysShowName: true
+    FollowRange: 32
+    KnockbackResistance: 1
+    MovementSpeed: 0.275
+    NoDamageTicks: 0
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+  Skills:
+   - sendtitle{title="&l&4感受我的愤怒吧！";subtitle="";d=20} @PlayersInRadius{r=10} ~onAttack
+   - skill{s=火焰雨_特效}@target
+   - skill{s=光芒炸裂} @NearestPlayer{r=25} ~onAttack 0.5
+   - skill{s=死亡特效_FCYH} @NearestPlayer{r=25} ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 player
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.4
+    KnockbackResistance: 0.5
+    PreventOtherDrops: true

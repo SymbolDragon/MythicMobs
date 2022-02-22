@@ -1,0 +1,92 @@
+﻿Halloween_witch:
+  MobType: witch
+  Display: '&e&l巫师侍从'
+  Health: 160
+  Damage: 25
+  Drops:
+  - Halloween_pumpkin 2to8
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  TargetConditions:
+  Skills:
+  - gcd{ticks=20}
+  - skill{s=火焰雨_特效}@target ~onDameged
+  - sound{s=entity.enderdragon.shoot} @SelfLocation
+  - skill{s=爆裂冲击波_技能} @Target{r=25}
+  - skill{s=死亡特效_凋零骷髅王} @NearestPlayer{r=25} ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 player
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    KnockbackResistance: 0.5
+    PreventOtherDrops: true
+
+Halloween_Evoker:
+  MobType: Evoker
+  Bossbar:
+   Enabled: true
+   Title: '巫术师'
+   Range: 20
+   Color: GREEN
+   Style: SOLID
+   CreateFog: true
+   DarkenSky: true
+  Display: '&5&l巫术师'
+  Health: 600
+  Damage: 25
+  Drops:
+  - Halloween_torch 1to5
+  - Halloween_pumpkin 5to10
+  - Halloween_carved_pumpkin 1 0.1
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  TargetConditions:
+  Skills:
+  - gcd{ticks=20}
+  - message{m="<mob.name><&co> 我用魔法获得永恒的生命，用永恒的生命研究魔法!"} @PlayersInRadius{r=40} ~onAttack 0.1
+  - skill{s=爆裂冲击波_技能} @NearestPlayer{r=25} ~onAttack 0.3 
+  - skill{s=光芒炸裂} @NearestPlayer{r=25} ~onAttack <50% 0.3
+  - skill{s=死亡特效_凋零骷髅王} @NearestPlayer{r=25} ~onDeath
+  - skill{s=印记法阵_技能_多重} @NearestPlayer{r=100} ~onDamaged 0.1
+  - skill{s=火焰雨_特效}@PIR{r=10} ~onDameged <50%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 player
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    KnockbackResistance: 0.5
+    PreventOtherDrops: true
+
+
+Halloween_Zombie:
+  Type: Zombie
+  Display: '&2&l万圣节僵尸'
+  Health: 100
+  Drops:
+  - Halloween_pumpkin 2to6
+  Skills:
+  - skill{s=彩虹弹_技能} @target ~onDamaged
+  Equipment:
+  - Halloween_jack_o_lantern:HEAD
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    KnockbackResistance: 0.5
+    PreventOtherDrops: true

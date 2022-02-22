@@ -1,0 +1,45 @@
+﻿firework_1:
+  Type: ARMOR_STAND
+  Display: '&a烟花'
+  Skills:
+  - firework{type=star;power=2;color=#FFC0CB;fadeColors=#DC143C;trail=true;flicker=true} @self ~onTimer:20
+  Options:
+   Invisible: true 
+自动烟花:
+  Type: ARMOR_STAND
+  Display: '&a自动烟花'
+  Skills:
+  - skill{s=烟花-随机} @self ~onTimer:40
+  Options:
+   Invisible: true 
+   
+new_year_pig:
+  Type: PIG
+  Display: '&6&l新年金猪'
+  Health: 1000
+  Drops:
+  - 新年活动币 1to2
+  Skills:
+  - skill{s=烟花-随机} @self ~onTimer:100
+  - randomskill{skills=新年金猪_偷钱_5,新年金猪_偷钱_10,新年金猪_给钱_10} @pir{r=40} ~ondamaged 0.2
+#  - skill{s=白色冲击波_技能} @pir{r=20} ~ondamaged 0.1
+  - skill{s=新年金猪_死亡特效} @pir{r=40} ~onDeath
+  - effect:itemspray{item=sunflower;amount=20;velocity=2;d=200;} ~onDeath
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+ 
+新年鞘翅特效1:
+  Type: ARMOR_STAND
+  Display: '&a&l新年鞘翅特效1'
+  Health: 100
+  Skills:
+   - skill{s=新年鞘翅_特效} @self ~onTimer:40
+新年鞘翅特效2:
+  Type: ARMOR_STAND
+  Display: '&a&l新年鞘翅特效2'
+  Health: 100
+  Skills:
+   - skill{s=新年鞘翅_特效2} @self ~onTimer:40
+

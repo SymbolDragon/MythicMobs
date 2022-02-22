@@ -1,0 +1,32 @@
+﻿WSS:
+  MobType: Evoker
+  Display: '&5巫术师'
+  Health: 160
+  Damage: 4
+  Drops:
+  - exp 51-54
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  TargetConditions:
+  Skills:
+  - gcd{ticks=20}
+  - skill{s=火焰雨_特效}@target
+  - sendtitle{title="&e&l尝尝坠落的滋味";subtitle="";d=20} @PlayersInRadius{r=10}
+  - sound{s=entity.enderdragon.shoot} @SelfLocation
+  - skill{s=爆裂冲击波_技能} @Target{r=25}
+  - skill{s=死亡特效} @NearestPlayer{r=25} ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 player
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    KnockbackResistance: 0.5
+    PreventOtherDrops: true

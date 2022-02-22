@@ -1,0 +1,34 @@
+﻿SS:
+  MobType: WITCH
+  Display: '&2&l术士'
+  Health: 500
+  Damage: 10
+  Drops:
+  - guoqing_coal 2to5
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  TargetConditions:
+  Skills:
+  - gcd{ticks=20}
+  - sendtitle{title="&l&4感受我的愤怒吧！";subtitle="";d=20} @PlayersInRadius{r=10} ~onAttack 0.1
+  - sound{s=entity.enderdragon.shoot} @SelfLocation
+  - skill{s=爆裂冲击波_技能} @NearestPlayer{r=25} ~onAttack 0.3 
+  - skill{s=光芒炸裂} @NearestPlayer{r=25} ~onAttack <50%
+  - skill{s=死亡特效_凋零骷髅王} @NearestPlayer{r=25} ~onDeath
+  - skill{s=印记法阵_技能_多重} @NearestPlayer{r=100} ~onDamaged 0.1
+  - skill{s=火焰雨_特效}@PIR{r=10} ~onDameged <50%
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 player
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    KnockbackResistance: 0.5
+    PreventOtherDrops: true

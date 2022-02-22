@@ -1,0 +1,37 @@
+﻿YQYH:
+  MobType: ZOMBIE_VILLAGER
+  Display: '&3&l怨气阴魂'
+  Health: 80
+  Damage: 12
+  Drops:
+  - exp 51-54
+  AITargetSelectors:
+  - 0 clear
+  Options:
+    AlwaysShowName: true
+    FollowRange: 32
+    KnockbackResistance: 1
+    MovementSpeed: 0.275
+    NoDamageTicks: 0
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+  Skills:
+   - gcd{ticks=20}
+   - skill{s=火焰雨_特效}@target ~onDamage 0.5
+   - skill{s=光芒炸裂} @NearestPlayer{r=25} ~onAttack 0.5
+   - skill{s=死亡特效_YQYH} @NearestPlayer{r=25} ~onDeath
+   - skill{s=大规模尸潮} @NearestPlayer{r=25} ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 player
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    KnockbackResistance: 0.5
+    PreventOtherDrops: true

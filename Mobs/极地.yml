@@ -1,0 +1,31 @@
+﻿ICE:
+  MobType: POLAR_BEAR
+  Display: '&6Lv.6▻&a&l极地之怒'
+  Health: 50
+  Damage: 2
+  Drops:
+  - exp 51-54
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  TargetConditions:
+  Skills:
+  - gcd{ticks=20}
+  - sendtitle{title="&l&8冰霜新星";subtitle="";d=20} @PlayersInRadius{r=10}
+  - delay 20
+  - skill{s=冰霜新星_技能} @NearestPlayer{r=25}
+  - sound{s=entity.enderdragon.shoot} @SelfLocation
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 player
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    KnockbackResistance: 0.5
+    PreventOtherDrops: true
